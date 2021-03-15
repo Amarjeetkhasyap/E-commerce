@@ -9,27 +9,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.13.0/css/all.min.css"
     />
-    <style>
-        .bd-placeholder-img {
-          font-size: 1.125rem;
-          text-anchor: middle;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          user-select: none;
-        }
-  
-        @media (min-width: 768px) {
-          .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-          }
-        }
-      </style>
-  
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>test
+    <title>Ecommerce
     </title>
   </head>
   <body>
@@ -45,14 +29,17 @@
     <h4 class="bg-dark mb-0 text-dark">.</h4>
     <nav class="navbar navbar-expand-lg py-3 px-3 navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand logo-name" style="color: rgb(105, 150, 101)"; href="index.html"><h4 class="p-1">Connect</h4></a>
+          <a class="navbar-brand logo-name" style="color: rgb(105, 150, 101)"; href="index.html">Connect</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"><h4 class="p-1">Home</h4></a>
@@ -60,10 +47,10 @@
               
               
               
-              <li class="nav-item dropdown">
-                <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <h4 class="p-1 text-light">Brands</h4>
-                </a>
+              <div class="btn-group">
+                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  <h4 class="p-1">Brands</h4>
+                </button>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
                   
                   <li><a class="dropdown-item" style="color:rgb(105, 150, 101)"; href="singleitem.html">Apple</a></li>
@@ -72,7 +59,7 @@
                   <li><a class="dropdown-item" style="color:rgb(105, 150, 101)"; href="singleitem.html">Oppo</a></li>
                   <li><a class="dropdown-item" style="color:rgb(105, 150, 101)"; href="singleitem.html">Vivo</a></li>
                 </ul>
-              </li>
+              </div>
               
               <li class="nav-item">
                 <a class="nav-link text-white" href="cart.html"><h4 class="p-1" >Orders</h4></a>
@@ -81,12 +68,11 @@
                 <a class="nav-link active" aria-current="page" href="cart.html"><h4 class="p-1 fas fa-shopping-cart"></h4></a>
               </li>
             </ul>
-            
           </div>
         </div>
     </nav>
     <!-- navbar section end -->
-     <div id="carouselExampleControls" class="carousel slide m-3" data-bs-ride="carousel"> 
+    <div id="carouselExampleControls" class="carousel slide m-3" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <a href="product.html"><img src="images/home cariusel 1.jpg" class="d-block w-100" alt="carousel image"></a> 
@@ -121,13 +107,17 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div> 
+    </div>
+    <main class="mt-5">
+
+  
 
 
-
-
-    <div class="container">
-        <div class="container"><h3 class="text-center text-dark m-1">Top Selling Phones</h3></div>
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+      
+      <div class="container"><h3 class="text-center text-dark m-1">Top Selling Phones</h3></div>
     
       <div class="container marketing mt-5">
     
@@ -135,7 +125,7 @@
         <div class="row">
           <div class="col-lg-4">
             <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-            <img src="images/iphone 12.jpg" class="bd-placeholder-img"   height="200" alt="image">
+            <img src="images/iphone 12.jpg"   height="200" alt="image">
     
             <h2>New Apple iPhone 12 Pro Max (128GB) - Pacific Blue</h2>
             <h4>
@@ -172,7 +162,7 @@
             <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
           </div>
           <div class="col-md-5">
-            <a href="product.html"><img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/new launch Samsung_S21_cover.jpg" width="450" height="400"    alt="image"></a>
+            <a href="product.html"><img  class="rounded" src="images/new launch Samsung_S21_cover.jpg"   width="500" height="400" alt="image"></a>
     
           </div>
         </div>
@@ -186,7 +176,7 @@
             <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <a href="product.html"><img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/iphone 12 silver.jpg"   width="300" height="auto" alt="image">
+            <a href="product.html"><img  class="rounded" src="images/new launch iphone.jpg"   width="450" height="400" alt="image">
             </a>
 
           
@@ -201,7 +191,7 @@
             <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
           </div>
           <div class="col-md-5">
-            <a href="product.html"><img  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/new launch one plus.jpg"   alt="image">
+            <a href="product.html"><img  class="rounded" src="images/new launch one plus.jpg"   width="500" height="500" alt="image">
             </a>
     
           </div>
@@ -211,19 +201,13 @@
     
         <!-- /END THE FEATURETTES -->
     
-      </div>
-    </div>
-    
-    
-    
-    
-    
-    
-   
-
+      </div><!-- /.container -->
+      
 
 
     
+      
+    </main>
        
     <!---------------------------------footer section------------------------------------    -------------------->
     <section class="bg-dark">

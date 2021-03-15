@@ -16,9 +16,14 @@
     font-family: "Tomatoes";
 
 }
-.d-flex{
-    margin-left: 250px;
+.dropdown-toggle{
+  display: inline;
+  margin-left: 2em;
 }
+
+/* .d-flex{
+    margin-left: 250px;
+} */
 
 .full-image{
     margin-top: 0px;imp !important
